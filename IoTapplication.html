@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+          
+            
+
+        }
+
+        header nav {
+            display: inline-block;
+            
+           
+        }
+
+        header h1 {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgb(211, 211, 211);
+            animation: example linear infinite;
+            animation-duration: 2s;
+            text-transform: uppercase;
+            
+        }
+
+        @keyframes example {
+            from {
+                color: aqua;
+            }
+
+            to {
+                color: red;
+            }
+
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            
+        }
+
+        header nav li {
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            border-radius: 3px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        a.active,
+        a:hover {
+            background: #1b9bff;
+            transition: .5s;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #1b9bff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .icon div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 3px 0;
+            top: 20px;
+        }
+
+        .icon {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            position: absolute;
+            top: 16px;
+            left: 10px;
+        }
+
+        .intro {
+            text-align: center;
+
+
+            background-color: aquamarine;
+
+        }
+
+        .intro I {
+            margin-top: 1px;
+            font-size: 50px;
+            padding: 30px;
+        }
+
+        main {
+            padding: 20px;
+
+        }
+
+        section {
+            background: linear-gradient(45deg, #e66465, #9198e5);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        I {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+
+        }
+
+        #about I {
+            animation: exami linear infinite;
+            animation-duration: 2s;
+            text-transform: uppercase;
+        }
+
+        @keyframes exami {
+            from {
+                color: rgb(255, 0, 123);
+            }
+
+            to {
+                color: rgb(72, 0, 255);
+            }
+
+        }
+
+        #services I {
+            animation: exam linear infinite;
+            animation-duration: 3s;
+            text-transform: uppercase;
+        }
+
+        @keyframes exam {
+            from {
+                color: rgb(145, 255, 0);
+            }
+
+            to {
+                color: red;
+            }
+
+        }
+        #next I {
+            animation: ex linear infinite;
+            animation-duration: 3s;
+            text-transform: uppercase;
+        }
+
+        @keyframes ex {
+            from {
+                color: rgb(255, 0, 179);
+            }
+
+            to {
+                color: red;
+            }
+
+        }
+        #another I {
+            animation: exams linear infinite;
+            animation-duration: 3s;
+            text-transform: uppercase;
+        }
+
+        @keyframes exams {
+            from {
+                color: rgba(0, 229, 255, 0.568);
+            }
+
+            to {
+                color: red;
+            }
+
+        }
+        footer {
+            color: lightgray;
+            padding: 10px;
+            text-align: center;
+          }
+          footer p{
+            text-align: center;
+          }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+    <header>
+        <h1>Documentation</h1>
+        <div class="icon">
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <nav>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">Topic</a>
+                        <div class="dropdown-content">
+                            <a href="#services">Activity 1</a>
+                            <a href="#next">Activity 2</a>
+                            <a href="#another">Activity 3</a>
+                            <a href="register-device.html">Practical Evidence</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="404.html">technology</a></li>
+                <li><a href="send-command.html">Send Command</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <I>Introduction </I>
+            <p>The Services API is an API that provides access to various backend services and resources like databases, authentication services, messaging systems, and other functionality used to build complex applications. 
+
+            </p>
+        </section>
+
+        <section id="services">
+            <I>Activity 1</I>
+            <p>Comments are explanatory notes that programmers add to their code to describe what the code is doing or why it is doing it. These notes are not executed by the computer, but serve as documentation for other programmers who may need to read and understand the code.
+
+            </p>
+        </section>
+
+        <section id="next">
+            <I>Activity 2</I>
+            <P> Async/await is a feature in programming languages that allows developers to write asynchronous code in a more synchronous style. Asynchronous code does not block program execution while waiting for an operation to complete. By using specific syntax and keywords, async/await enables developers to write asynchronous code that looks and behaves more like synchronous code. This makes it easier to understand and maintain.
+
+
+            </P>
+        </section>
+
+        <section id="another">
+            <I>Activity 3</I>
+            <P>API documentation is a collection of materials that explains how to interact with an Application Programming Interface (API). It includes details about the API's features, such as endpoints, formats for requests and responses, error codes, and requirements for authentication and authorization. API documentation provides developers with a reference guide for integrating an API into their applications or software. It helps developers to quickly understand the API's capabilities and how to use it effectively. The documentation should be well-organized, easy to navigate, and include examples and sample code. API documentation can be presented in different formats, such as HTML, PDF, or interactive documentation that allows developers to test the API directly from the documentation.
+
+
+
+            </P>
+        </section>
+
+
+
+        <footer>
+            <p>Copyright &copy; 2023 Amritendu Web Page</p>
+          </footer>
+
+
+</body>
+
+</html>
